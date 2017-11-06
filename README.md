@@ -2,26 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
-## Development server
+## Usage
+Enter an item name and quantity in the top header and click "Add New Item". The item will show up in the top section of the display.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Hover over or click a grocery list item to reveal options for adding to basket. Select quantity and click "Add to Basket". The item will show up in the lower section of the display.
 
-## Code scaffolding
+Hover over or click a basket item to reveal options for removing from the basket. Select quantity and click "Remove from Basket". The item quantities will update in both the grocery list and the basket. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+If the entire quantity of an item is added to the basket, that item will be hidden in the grocery list (or crossed out if the "Show items added to basket" is checked). If a partial quantity is added, the item will appear in both the grocery list and the basket with the corresponding quantities. 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If the quantity added to the basket is removed, that item will no longer be visible in the basket.
