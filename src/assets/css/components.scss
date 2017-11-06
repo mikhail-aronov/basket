@@ -1,0 +1,77 @@
+.item-quantity-cont{
+    display: block;
+
+    >div{
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 1em;
+        margin: 0 3px;
+    }
+
+    button{
+        font-size:16px;
+    }
+}
+
+.grocery-list-item{
+    border: 1px solid rgba(20,53,80,0.14);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;  
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,.08), 0 3px 6px rgba(0,0,0,.08);
+    display: inline-block;
+    font-size: 0;
+    min-width: 150px;
+    max-width: calc(50% - 10px);
+    margin: 0 5px 10px 5px;
+    vertical-align: top;
+
+    .item-text-cont, .add-button > span, .remove-button > span{
+        padding: 10px;
+    }
+
+    span{ 
+        display: inline-block;
+        font-size: 16px; 
+        vertical-align: top;
+    }
+
+    [name='item-name']{
+        word-wrap: break-word;
+        width: 90%;
+    }
+
+    [name='item-quantity']{
+        font-weight: bold;
+        text-align: right;
+        width: 10%;
+    }
+
+    .item-quantity-cont{
+        display:none;
+    }
+
+    .add-button, .remove-button{
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .add-button{ background: #00c990;}
+    .remove-button{ background: rgb(179, 16, 16); }
+
+    &:hover{
+        .add-button, .remove-button, .item-quantity-cont{
+            display: block;
+        }
+    }
+}

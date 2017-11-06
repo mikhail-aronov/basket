@@ -1,0 +1,20 @@
+<div *ngIf="itemsInBasket.length == 0" class="empty-list-message">
+    No items in basket
+</div>
+
+<div class="grocery-list-item" *ngFor="let item of itemsInBasket" (mouseenter)="selectItem(item)">
+    <div class="item-text-cont">
+        <span name="item-name">{{item.name}}</span>
+        <span name="item-quantity">{{item.inBasket}}</span>
+    </div>
+    <div class="item-quantity-cont">
+        <div>
+            <button [disabled]="selectedItem.inBasket <= 1" (click)="decrementQuantity()">-</button>
+            <input [(ngModel)]="selectedItem.inBasket">
+            <button [disabled]="selectedItem.inBasket >= item.inBasket" (click)="incrementQuantity()">+</button>
+        </div>
+    </div>
+    <div class="remove-button" (click)="removeFromBasket(item)">
+        <span>Remove from Basket</span>
+    </div>
+</div>

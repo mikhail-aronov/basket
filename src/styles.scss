@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+html,body{ 
+    height: 100%;
+    margin: 0; 
+}
+
+app-root{
+    min-width: 400px;
+}
+
+input {
+    padding: 5px;
+}
+
+.invalid{ outline: 1px solid red; }
+
+.empty-list-message{
+    text-align: center;
+}

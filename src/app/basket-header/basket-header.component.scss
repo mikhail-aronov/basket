@@ -1,0 +1,18 @@
+.add-new-item-cont, .item-quantity-cont, .toggle-show-items-cont{ display: inline-block !important; }
+
+.add-new-item-cont, .toggle-show-items-cont{
+    vertical-align: top;
+}
+
+.toggle-show-items-cont{
+    font-size:12px;
+    margin-left: 15px;
+    label {
+        color: #182B57;
+        input{
+            margin: 0 5px 0 15px;
+            vertical-align: text-top;
+
+        }
+    }
+}

@@ -1,0 +1,32 @@
+app-basket-header, app-grocery-list, app-basket{
+    display: block;
+}
+
+$headerHeight: 30px;
+$topMargin: 10px;
+$headerTopPadding: 15px;
+$headerRightPadding: 15px;
+$headerBottomPadding: 15px;
+$headerLeftPadding: 15px;
+$headerFullHeight: calc(#{$headerHeight} + #{$headerTopPadding} + #{$headerBottomPadding});
+
+app-basket-header{
+    background: rgb(150, 199, 211);
+    display: block;
+    line-height: $headerHeight;
+    padding: $headerTopPadding $headerRightPadding $headerBottomPadding $headerLeftPadding;
+    width: calc(100% - #{$headerLeftPadding} - #{$headerRightPadding});
+}
+
+app-grocery-list{
+    border-bottom: 1px solid rgba(20,53,80,0.14);
+    margin-top: $topMargin;
+    min-height: 20%;
+    max-height: calc(60% - #{$topMargin} - #{$headerFullHeight});
+}
+
+app-basket{
+    margin-top: $topMargin;
+    max-height: clac(40% - #{$topMargin}- #{$headerFullHeight});
+}
+

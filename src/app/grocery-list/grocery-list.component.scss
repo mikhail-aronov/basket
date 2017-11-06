@@ -1,0 +1,12 @@
+.hidden{ display: none !important; }
+
+.done{
+    opacity: 0.7;
+    .item-text-cont > span{
+        text-decoration: line-through;
+    }
+
+    .item-quantity-cont, .add-button{
+        display:none !important;
+    }
+}

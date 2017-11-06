@@ -1,0 +1,11 @@
+
+    <input class="new-item-name" placeholder="Item name" [(ngModel)]="newItem.name" required #name="ngModel">
+    <div class="item-quantity-cont">
+        <button [disabled]="newItem.quantity <= 1" (click)="decrementQuantity()">-</button>
+        <input [(ngModel)]="newItem.quantity">
+        <button (click)="incrementQuantity()">+</button>
+    </div>
+    <button [disabled]="name.invalid" (click)="addToList();">Add New Item</button>
+<div class="toggle-show-items-cont">    
+    <label><input type="checkbox" (click)="toggleShowListItemsInBasket()" />Show items added to basket</label>
+</div>
